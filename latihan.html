@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>LATIHAN WAD</title>
+</head>
+<style media="screen">
+    body {
+        background-color: white;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 400px;
+    }
+        
+    .foto {
+        vertical-align: middle;
+        width: 200px;
+        height: 200px;
+        border-radius: 70%;
+        padding: 20px;
+    }
+
+    .sosmed {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        padding: 20px;
+    }
+
+    #icon{
+        display: flex;
+        gap: 10px;
+    }
+
+    a{
+        transition: 0.5s;
+    }
+
+    #a:hover{
+        cursor: pointer;
+        opacity: 50%;
+    }
+
+    p {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1rem;
+        font-style: bold;
+        line-height: 1px;
+    }
+    .imgcontainer {
+        background-color: #8fb5e4;
+        border-radius: 50%;
+    }
+    
+    .sosmedcontainer {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .identitas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 400px;
+        border-radius: 25px;
+        background-color: #8896be;
+    }
+    
+
+    .date{
+        display: flex;
+        align-self: flex-end;
+        margin-top: 20px;
+        background-color: #c6b1ce;
+        border: 50px;
+        color: #0e0808;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+        <center> 
+            <div class="container">
+                <img src="D:\Bahan CV\Foto_1202223304_Khilyah Nafisah.jpg" 
+                style="width: 200px;height: 200px;border-radius: 100%;"/>
+                <div class="identitas">
+                    <H2>Khilyah Nafisah </H2>
+                    <p>   1202223304 </p>
+                    <p><i> SI4604 </i> - <b><u>SISTEM INFORMASI </u></b></p>
+                </div>
+                <div id="icon">
+                    <a href="https://www.linkedin.com/feed/" target="_blank"> <img 
+                        src="C:\Users\ASUS\Downloads\linkin.png"
+                        style="width: 50px;height: 50px;border-radius: 100%;"/></a>
+                    <a href="https://www.instagram.com/" target="_blank"> <img 
+                        src="C:\Users\ASUS\Downloads\insta.jpeg"
+                        style="width: 50px;height: 50px;border-radius: 100%;"/></a>
+                    <a href="https://www.tiktok.com/@coolfromborn?is_from_webapp=1&sender_device=pc" target="_blank"> <img 
+                        src="C:\Users\ASUS\Downloads\tioktok.png"
+                        style="width: 50px;height: 50px;border-radius: 100%;"/></a>
+                </div>
+                
+                <div class="date">
+                    <p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("tanggalwaktu").innerHTML = dt.toLocaleString();
+                    </script>
+    
+                </div>
+            </div>
+
+            
+            
+        </center>
+        
+</body>
+</html>
